@@ -84,7 +84,7 @@ export default function TestimonialCarousel() {
         {/* Main Testimonial */}
         <div className="max-w-4xl mx-auto mb-12">
           <Card className="border-0 shadow-2xl bg-white/80 backdrop-blur-sm">
-            <CardContent className="p-8 md:p-12">
+            <CardContent className="p-4 sm:p-6 md:p-8 lg:p-12">
               <div className="text-center">
                 {/* Quote Icon */}
                 <div className="mb-6">
@@ -92,7 +92,7 @@ export default function TestimonialCarousel() {
                 </div>
 
                 {/* Testimonial Text */}
-                <blockquote className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8 italic">
+                <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed mb-8 italic">
                   "{testimonials[currentTestimonial].text}"
                 </blockquote>
 
@@ -104,15 +104,15 @@ export default function TestimonialCarousel() {
                 </div>
 
                 {/* Client Info */}
-                <div className="flex items-center justify-center space-x-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4">
                   <img
                     src={testimonials[currentTestimonial].image || "/placeholder.svg"}
                     alt={testimonials[currentTestimonial].name}
-                    className="w-16 h-16 rounded-full object-cover border-4 border-blue-200"
+                    className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-4 border-blue-200"
                   />
-                  <div className="text-left">
-                    <div className="font-semibold text-gray-900 text-lg">{testimonials[currentTestimonial].name}</div>
-                    <div className="text-gray-600">{testimonials[currentTestimonial].location}</div>
+                  <div className="text-center sm:text-left">
+                    <div className="font-semibold text-gray-900 text-base sm:text-lg">{testimonials[currentTestimonial].name}</div>
+                    <div className="text-sm sm:text-base text-gray-600">{testimonials[currentTestimonial].location}</div>
                     <Badge variant="outline" className="mt-1 text-xs">
                       {testimonials[currentTestimonial].adventure}
                     </Badge>
@@ -158,22 +158,22 @@ export default function TestimonialCarousel() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-3xl mx-auto">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">5,000+</div>
-            <div className="text-gray-600">Happy Clients</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600 mb-2">5,000+</div>
+            <div className="text-sm sm:text-base text-gray-600">Happy Clients</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-cyan-600 mb-2">4.8/5</div>
-            <div className="text-gray-600">Average Rating</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-cyan-600 mb-2">4.8/5</div>
+            <div className="text-sm sm:text-base text-gray-600">Average Rating</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-teal-600 mb-2">200+</div>
-            <div className="text-gray-600">Glacial Routes</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-teal-600 mb-2">200+</div>
+            <div className="text-sm sm:text-base text-gray-600">Glacial Routes</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-indigo-600 mb-2">12+</div>
-            <div className="text-gray-600">Years Experience</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-indigo-600 mb-2">12+</div>
+            <div className="text-sm sm:text-base text-gray-600">Years Experience</div>
           </div>
         </div>
       </div>

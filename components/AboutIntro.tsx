@@ -13,24 +13,24 @@ export default function AboutIntro() {
   return (
     <section className="py-24 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-8">
             <div>
               <Badge className="mb-4 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">About Us</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Your Gateway to
                 <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
                   {" "}
                   Northern Pakistan
                 </span>
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
                 For over 15 years, Glacier Gaze Adventures has been crafting unforgettable experiences in the
                 breathtaking landscapes of Gilgit-Baltistan. From the mighty Karakoram peaks to the serene Hunza Valley,
                 we specialize in creating memories that last a lifetime.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                 Our passion for the northern areas of Pakistan and commitment to sustainable tourism has made us the
                 trusted choice for thousands of adventurers seeking authentic experiences in the world's most
                 spectacular mountain region.
@@ -38,15 +38,15 @@ export default function AboutIntro() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
               {stats.map((stat, index) => (
                 <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <CardContent className="p-6 text-center">
+                  <CardContent className="p-3 sm:p-4 md:p-6 text-center">
                     <div className={`inline-flex p-3 rounded-full bg-gray-50 mb-4 ${stat.color}`}>
                       <stat.icon className="h-6 w-6" />
                     </div>
-                    <div className="text-2xl font-bold text-gray-900 mb-1">{stat.value}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-1">{stat.value}</div>
+                    <div className="text-xs sm:text-sm text-gray-600">{stat.label}</div>
                   </CardContent>
                 </Card>
               ))}
@@ -57,20 +57,20 @@ export default function AboutIntro() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="/IMG_4561.JPG"
+                src="/IMG_4561.jpg"
                 alt="Glacier Gaze Adventures team in Gilgit-Baltistan"
-                className="w-full h-[600px] object-cover"
+                className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
                 // Image comment: Professional photo of local guides and team members in traditional Gilgit-Baltistan dress with Karakoram mountains in background
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
 
             {/* Floating stats card */}
-            <Card className="absolute -bottom-8 -left-8 bg-white shadow-2xl border-0">
-              <CardContent className="p-6">
+            <Card className="absolute -bottom-4 sm:-bottom-6 md:-bottom-8 -left-4 sm:-left-6 md:-left-8 bg-white shadow-2xl border-0">
+              <CardContent className="p-3 sm:p-4 md:p-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-600 mb-1">15+</div>
-                  <div className="text-sm text-gray-600">Years in GB Tourism</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-emerald-600 mb-1">15+</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Years in GB Tourism</div>
                 </div>
               </CardContent>
             </Card>

@@ -10,12 +10,12 @@ export default function GalleryGrid() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
   const galleryImages = [
-    { src: "/IMG_5132.JPG", title: "Mountain Majesty", description: "Majestic peak photography" },
-    { src: "/IMG_4679.JPG", title: "Mountain Expedition", description: "Adventure photography" },
-    { src: "/IMG_5184.JPG", title: "Natural Vista", description: "Panoramic mountain views" },
-    { src: "/IMG_4700.JPG", title: "Adventure Journey", description: "Mountain exploration" },
-    { src: "/IMG_5099.JPG", title: "Peak Adventure", description: "High altitude photography" },
-    { src: "/IMG_4661.JPG", title: "Adventure Trail", description: "Exploring mountain trails" },
+    { src: "/IMG_5132.jpg", title: "Mountain Majesty", description: "Majestic peak photography" },
+    { src: "/IMG_4679.jpg", title: "Mountain Expedition", description: "Adventure photography" },
+    { src: "/IMG_5184.jpg", title: "Natural Vista", description: "Panoramic mountain views" },
+    { src: "/IMG_4700.jpg", title: "Adventure Journey", description: "Mountain exploration" },
+    { src: "/IMG_5099.jpg", title: "Peak Adventure", description: "High altitude photography" },
+    { src: "/IMG_4661.jpg", title: "Adventure Trail", description: "Exploring mountain trails" },
   ]
 
   return (
@@ -35,7 +35,7 @@ export default function GalleryGrid() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {galleryImages.map((image, index) => (
             <Card
               key={index}
@@ -46,7 +46,7 @@ export default function GalleryGrid() {
                 <img
                   src={image.src || "/placeholder.svg"}
                   alt={image.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 

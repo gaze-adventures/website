@@ -105,7 +105,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <Card
               key={index}
@@ -138,7 +138,7 @@ export default function ServicesSection() {
 
               <CardContent className="space-y-4">
                 {/* Quick Info */}
-                <div className="grid grid-cols-3 gap-2 text-xs">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
                   <div className="flex items-center text-gray-500">
                     <Clock className="h-3 w-3 mr-1" />
                     {service.duration}

@@ -29,10 +29,10 @@ export default function Header() {
               <Mountain className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+              <h1 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                 GLACIER GAZE
               </h1>
-              <p className="text-xs text-gray-600 -mt-1">ADVENTURES</p>
+              <p className="text-xs text-gray-600 -mt-1 hidden sm:block">ADVENTURES</p>
             </div>
           </Link>
 
@@ -50,39 +50,45 @@ export default function Header() {
           </nav>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center text-gray-600 text-sm">
+          <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
+            <div className="hidden lg:flex items-center text-gray-600 text-sm">
               <Phone className="h-4 w-4 mr-2" />
               <span>+92 5811 123456</span>
             </div>
-            <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
+            <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white text-sm px-4 py-2">
               Book Now
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="lg:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="lg:hidden p-2 touch-manipulation" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t">
+          <div className="lg:hidden py-4 border-t bg-white">
             <nav className="flex flex-col space-y-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300"
+                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 py-2 touch-manipulation"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white mt-4">
-                Book Now
-              </Button>
+              <div className="pt-4 space-y-3">
+                <div className="flex items-center text-gray-600 text-sm">
+                  <Phone className="h-4 w-4 mr-2" />
+                  <span>+92 5811 123456</span>
+                </div>
+                <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
+                  Book Now
+                </Button>
+              </div>
             </nav>
           </div>
         )}
