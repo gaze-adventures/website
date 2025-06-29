@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "everest-base-camp-glacier",
+    "title": "Everest Base Camp Glacier Trek",
+    "duration": "16 Days",
+    "price": "$2,450",
+    "thumbnail": "/placeholder.svg?height=300&width=400",
+    "highlights": ["Khumbu Icefall", "Glacier Views", "Base Camp Experience", "Sherpa Culture"],
+    "difficulty": "Challenging",
+    "groupSize": "8-12 people",
+    "rating": 4.9,
+    "location": "Nepal Himalayas",
+    "description": "Experience the world's most famous glacier trek to Everest Base Camp."
+  },
+  {
+    "slug": "patagonia-ice-field",
+    "title": "Patagonia Ice Field Expedition",
+    "duration": "12 Days",
+    "price": "$1,890",
+    "thumbnail": "/placeholder.svg?height=300&width=400",
+    "highlights": ["Southern Ice Field", "Glacier Hiking", "Ice Caves", "Wildlife Viewing"],
+    "difficulty": "Moderate",
+    "groupSize": "6-10 people",
+    "rating": 4.8,
+    "location": "Argentina/Chile",
+    "description": "Explore the vast Patagonian ice fields and pristine glacial landscapes."
+  },
+  {
+    "slug": "iceland-glacier-walk",
+    "title": "Iceland Glacier Walking Adventure",
+    "duration": "8 Days",
+    "price": "$1,250",
+    "thumbnail": "/placeholder.svg?height=300&width=400",
+    "highlights": ["Vatnajökull Glacier", "Ice Climbing", "Northern Lights", "Hot Springs"],
+    "difficulty": "Easy to Moderate",
+    "groupSize": "4-8 people",
+    "rating": 4.7,
+    "location": "Iceland",
+    "description": "Walk on Europe's largest glacier and witness stunning ice formations."
+  },
+  {
+    "slug": "alaska-glacier-bay",
+    "title": "Alaska Glacier Bay Cruise Trek",
+    "duration": "10 Days",
+    "price": "$1,650",
+    "thumbnail": "/placeholder.svg?height=300&width=400",
+    "highlights": ["Tidewater Glaciers", "Wildlife Safari", "Kayaking", "Glacier Calving"],
+    "difficulty": "Easy",
+    "groupSize": "12-20 people",
+    "rating": 4.6,
+    "location": "Alaska, USA",
+    "description": "Witness massive glaciers calving into the sea in pristine Glacier Bay."
+  },
+  {
+    "slug": "mont-blanc-glacier-tour",
+    "title": "Mont Blanc Glacier Circuit",
+    "duration": "7 Days",
+    "price": "$980",
+    "thumbnail": "/placeholder.svg?height=300&width=400",
+    "highlights": ["Mer de Glace", "Alpine Huts", "Glacier Museums", "Mountain Railways"],
+    "difficulty": "Moderate",
+    "groupSize": "6-12 people",
+    "rating": 4.5,
+    "location": "French Alps",
+    "description": "Explore the glaciers around Europe's highest peak in the French Alps."
+  },
+  {
+    "slug": "norway-glacier-fjords",
+    "title": "Norway Glacier & Fjords Adventure",
+    "duration": "9 Days",
+    "price": "$1,450",
+    "thumbnail": "/placeholder.svg?height=300&width=400",
+    "highlights": ["Jostedalsbreen Glacier", "Fjord Cruises", "Ice Tunnels", "Midnight Sun"],
+    "difficulty": "Easy to Moderate",
+    "groupSize": "8-14 people",
+    "rating": 4.8,
+    "location": "Norway",
+    "description": "Discover Norway's spectacular glaciers and dramatic fjord landscapes."
+  }
+]
