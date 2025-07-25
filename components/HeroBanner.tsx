@@ -80,7 +80,7 @@ export default function HeroBanner() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-8 mb-12 max-w-2xl mx-auto bg-black/20 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6">
             <div className="text-center animate-bounce-in">
-              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-lg">50+</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-lg">20+</div>
               <div className="text-xs sm:text-sm text-white/90 drop-shadow-md">Mountain Routes</div>
             </div>
             <div className="text-center animate-bounce-in" style={{ animationDelay: "0.2s" }}>
@@ -88,7 +88,7 @@ export default function HeroBanner() {
               <div className="text-xs sm:text-sm text-white/90 drop-shadow-md">Happy Travelers</div>
             </div>
             <div className="text-center animate-bounce-in" style={{ animationDelay: "0.4s" }}>
-              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-lg">15+</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-lg">7+</div>
               <div className="text-xs sm:text-sm text-white/90 drop-shadow-md">Years Experience</div>
             </div>
           </div>
