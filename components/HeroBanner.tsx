@@ -25,6 +25,22 @@ export default function HeroBanner() {
     },
   ]
 
+  // Navigation handlers
+  const handleExploreClick = () => {
+    window.open("https://www.google.com/maps/place/Gilgit-Baltistan,+Pakistan/@35.5,74.5,8z", "_blank")
+  }
+
+  const handleWatchStoriesClick = () => {
+    window.open("https://www.youtube.com/results?search_query=Gilgit+Baltistan+travel+documentary", "_blank")
+  }
+
+  const handleScrollDown = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    })
+  }
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
@@ -44,16 +60,32 @@ export default function HeroBanner() {
         playsInline
         style={{ objectFit: "cover" }}
       />
+
       {/* Overlay gradient - increased opacity for better text contrast */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/50 pointer-events-none" />
 
       {/* Static particles effect - fixed positions to avoid hydration issues */}
       <div className="absolute inset-0">
-        <Mountain className="absolute text-white/10 animate-pulse" style={{ left: "10%", top: "20%", animationDelay: "0s", animationDuration: "3s" }} />
-        <Mountain className="absolute text-white/10 animate-pulse" style={{ left: "80%", top: "30%", animationDelay: "1s", animationDuration: "4s" }} />
-        <Mountain className="absolute text-white/10 animate-pulse" style={{ left: "30%", top: "60%", animationDelay: "2s", animationDuration: "3.5s" }} />
-        <Mountain className="absolute text-white/10 animate-pulse" style={{ left: "70%", top: "80%", animationDelay: "0.5s", animationDuration: "4.5s" }} />
-        <Mountain className="absolute text-white/10 animate-pulse" style={{ left: "50%", top: "10%", animationDelay: "1.5s", animationDuration: "3.2s" }} />
+        <Mountain
+          className="absolute text-white/10 animate-pulse"
+          style={{ left: "10%", top: "20%", animationDelay: "0s", animationDuration: "3s" }}
+        />
+        <Mountain
+          className="absolute text-white/10 animate-pulse"
+          style={{ left: "80%", top: "30%", animationDelay: "1s", animationDuration: "4s" }}
+        />
+        <Mountain
+          className="absolute text-white/10 animate-pulse"
+          style={{ left: "30%", top: "60%", animationDelay: "2s", animationDuration: "3.5s" }}
+        />
+        <Mountain
+          className="absolute text-white/10 animate-pulse"
+          style={{ left: "70%", top: "80%", animationDelay: "0.5s", animationDuration: "4.5s" }}
+        />
+        <Mountain
+          className="absolute text-white/10 animate-pulse"
+          style={{ left: "50%", top: "10%", animationDelay: "1.5s", animationDuration: "3.2s" }}
+        />
       </div>
 
       {/* Content */}
@@ -64,14 +96,20 @@ export default function HeroBanner() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-white drop-shadow-2xl">
               GLACIER GAZE
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-white mt-2 drop-shadow-lg">ADVENTURES</p>
-            <p className="text-sm sm:text-base md:text-lg text-white/90 mt-2 drop-shadow-md">Gilgit-Baltistan Specialists</p>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-white mt-2 drop-shadow-lg">
+              ADVENTURES
+            </p>
+            <p className="text-sm sm:text-base md:text-lg text-white/90 mt-2 drop-shadow-md">
+              Gilgit-Baltistan Specialists
+            </p>
             <div className="w-32 h-1 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto mt-4 rounded-full" />
           </div>
 
           {/* Dynamic content */}
           <div className="mb-8 animate-slide-up bg-black/20 backdrop-blur-sm rounded-lg p-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 animate-fade-in text-white drop-shadow-xl">{slides[currentSlide].title}</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 animate-fade-in text-white drop-shadow-xl">
+              {slides[currentSlide].title}
+            </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-8 animate-fade-in-delay drop-shadow-lg">
               {slides[currentSlide].subtitle}
             </p>
@@ -93,11 +131,12 @@ export default function HeroBanner() {
             </div>
           </div>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons with Navigation */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 px-4">
             <Button
               size="lg"
               className="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-600 hover:to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full shadow-2xl hover:shadow-emerald-500/25 transition-all duration-300 hover:scale-105"
+              onClick={handleExploreClick}
             >
               <MapPin className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               <span className="hidden sm:inline">Explore Gilgit-Baltistan</span>
@@ -107,6 +146,7 @@ export default function HeroBanner() {
               size="lg"
               variant="outline"
               className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-gray-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105 bg-transparent"
+              onClick={handleWatchStoriesClick}
             >
               <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               <span className="hidden sm:inline">Watch Stories</span>
@@ -114,9 +154,9 @@ export default function HeroBanner() {
             </Button>
           </div>
 
-          {/* Scroll indicator */}
-          <div className="animate-bounce">
-            <ChevronDown className="h-8 w-8 mx-auto text-white/70" />
+          {/* Scroll indicator with click handler */}
+          <div className="animate-bounce cursor-pointer" onClick={handleScrollDown}>
+            <ChevronDown className="h-8 w-8 mx-auto text-white/70 hover:text-white transition-colors" />
           </div>
         </div>
       </div>
