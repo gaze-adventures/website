@@ -5,7 +5,7 @@ export const tours = [
     duration: "18 Days",
     price: "$2,850",
     thumbnail: "/placeholder.svg?height=300&width=400",
-    highlights: ["Baltoro Glacier", "Concordia", "K2 Base Camp", "Broad Peak Views"],
+    highlights: ["Baltoro Glacier", "K2 Base Camp", "Broad Peak Views"],
     difficulty: "Extreme",
     groupSize: "6-10 people",
     rating: 4.9,
@@ -34,7 +34,7 @@ export const tours = [
     title: "Hunza Valley Cultural Experience",
     duration: "8 Days",
     price: "$1,250",
-    thumbnail: "/placeholder.svg?height=300&width=400",
+    thumbnail: "/IMG_4561.jpg",
     highlights: ["Karimabad", "Baltit Fort", "Attabad Lake", "Passu Cones"],
     difficulty: "Easy",
     groupSize: "8-15 people",
@@ -58,6 +58,76 @@ export const tours = [
     ],
     notIncluded: ["Flights to Gilgit", "Personal expenses", "Shopping", "Optional activities"],
   },
+  {
+  "slug": "attabad-lake-adventure",
+  "title": "Attabad Lake Adventure & Leisure Tour",
+  "duration": "5 Days",
+  "price": "$980",
+  "thumbnail": "/IMG_4678.jpg",
+  "highlights": ["Attabad Lake Boating", "Passu Cones", "Tunnel Drive", "Local Handicrafts"],
+  "difficulty": "Easy",
+  "groupSize": "6-12 people",
+  "rating": 4.7,
+  "location": "Hunza, Gilgit-Baltistan",
+  "description": "Relax at the stunning turquoise waters of Attabad Lake surrounded by towering peaks.",
+  "fullDescription": "Formed after a massive landslide in 2010, Attabad Lake has become one of Pakistan's most iconic natural attractions. This tour combines peaceful lake-side relaxation with cultural exploration of the surrounding Hunza region, offering a balance of adventure and leisure.",
+  "itinerary": [
+    "Day 1: Arrival in Gilgit, transfer to Hunza",
+    "Day 2: Drive to Attabad Lake, enjoy boating and jet ski experience",
+    "Day 3: Visit Passu Cones, walk on Hussaini Suspension Bridge",
+    "Day 4: Explore Gulmit village and local bazaars",
+    "Day 5: Return to Gilgit for departure"
+  ],
+  "included": [
+    "Transportation from Gilgit",
+    "Hotel accommodation by the lake",
+    "Daily breakfast and dinner",
+    "Boating activity",
+    "Local guide services"
+  ],
+  "notIncluded": [
+    "Flights to Gilgit",
+    "Lunches",
+    "Personal expenses",
+    "Optional activities like jet skiing"
+  ]
+},
+{
+  "slug": "passu-cones-expedition",
+  "title": "Passu Cones Trekking & Cultural Tour",
+  "duration": "6 Days",
+  "price": "$1,050",
+  "thumbnail": "/IMG_5093.jpg",
+  "highlights": ["Passu Cones Viewpoint", "Passu Glacier", "Hussaini Bridge", "Local Wakhi Culture"],
+  "difficulty": "Moderate",
+  "groupSize": "6-10 people",
+  "rating": 4.9,
+  "location": "Upper Hunza, Gilgit-Baltistan",
+  "description": "Witness the iconic Passu Cathedral Peaks and explore the highland beauty of Upper Hunza.",
+  "fullDescription": "This immersive experience takes you deep into the heart of the Karakoram Range where the legendary Passu Cones pierce the sky. Hike to nearby glaciers, cross the thrilling Hussaini Suspension Bridge, and engage with the local Wakhi community for a culturally rich adventure.",
+  "itinerary": [
+    "Day 1: Arrive in Gilgit, drive to Passu via Karakoram Highway",
+    "Day 2: Sunrise at Passu Viewpoint, visit Borith Lake",
+    "Day 3: Hike to Passu Glacier, explore surrounding valleys",
+    "Day 4: Cross Hussaini Suspension Bridge, visit Gulmit village",
+    "Day 5: Free day for photography and cultural interaction",
+    "Day 6: Drive back to Gilgit for departure"
+  ],
+  "included": [
+    "All ground transport",
+    "Hotel and guesthouse accommodations",
+    "Local mountain guide",
+    "All meals during trek days",
+    "Cultural visits and permits"
+  ],
+  "notIncluded": [
+    "Domestic flights",
+    "Personal gear",
+    "Snacks and beverages",
+    "Tips and gratuities"
+  ]
+},
+
   {
     slug: "skardu-deosai-adventure",
     title: "Skardu & Deosai Plains Safari",
